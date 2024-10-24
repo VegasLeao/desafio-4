@@ -1,0 +1,59 @@
+.app-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app-container h1 {
+  color: #662d91;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.app-container .lamp-container {
+  margin-bottom: 20px;
+}
+.app-container .lamp-container .lamp, .app-container .lamp-container .genie {
+  width: 150px;
+  transition: transform 0.3s ease-in-out;
+}
+.app-container .lamp-container .genie {
+  transform: scale(1.1);
+}
+.app-container button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.app-container button:hover {
+  background-color: #217dbb;
+}
+
+@media (min-width: 768px) {
+  .app-container .lamp-container .lamp, .app-container .lamp-container .genie {
+    width: 250px;
+  }
+  .app-container button {
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .app-container {
+    padding: 10px;
+  }
+  .app-container .lamp-container .lamp, .app-container .lamp-container .genie {
+    width: 120px;
+  }
+  .app-container button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=App.css.map */

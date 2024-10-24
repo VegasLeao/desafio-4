@@ -1,0 +1,83 @@
+// Variáveis de cores
+$primary-color: #ffcc00;
+$secondary-color: #662d91;
+$bg-color: #f0f0f0;
+$button-color: #3498db;
+$button-hover-color: darken($button-color, 10%);
+
+.app-container {
+  text-align: center;
+  padding: 20px;
+  background-color: $bg-color;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: $secondary-color;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .lamp-container {
+    margin-bottom: 20px;
+
+    .lamp, .genie {
+      width: 150px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .genie {
+      transform: scale(1.1);
+    }
+  }
+
+  button {
+    background-color: $button-color;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $button-hover-color;
+    }
+  }
+}
+
+// Responsividade
+@media (min-width: 768px) {
+  .app-container {
+    .lamp-container {
+      .lamp, .genie {
+        width: 250px;
+      }
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 10px;
+
+    .lamp-container {
+      .lamp, .genie {
+        width: 120px;
+      }
+    }
+
+    button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+}
