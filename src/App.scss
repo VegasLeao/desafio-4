@@ -5,6 +5,13 @@ $bg-color: #f0f0f0;
 $button-color: #3498db;
 $button-hover-color: darken($button-color, 10%);
 
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: $bg-color;
+  height: 100%;
+}
+
 .app-container {
   text-align: center;
   padding: 20px;
